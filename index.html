@@ -210,6 +210,33 @@ body{font-family:'Noto Sans Thai',sans-serif;background:var(--bg);color:var(--te
 .search-inp:focus{border-color:var(--g1);}
 
 @media print{.topbar,.atabs,.t-btn,.act,.btn-sec,.filter-row,.date-nav-btn,.search-bar{display:none!important;}.page{display:block!important;}body{background:white;}.dc{box-shadow:none;border:1px solid #e2e8f0;}}
+}
+}
+  
+/* ปุ่ม Apps Hub */
+.apps-hub-btn{
+position:fixed;
+top:15px;
+left:20px;
+
+background:white;
+color:#1f7a5c;
+
+padding:6px 12px;
+border-radius:8px;
+
+font-size:13px;
+text-decoration:none;
+font-weight:600;
+
+box-shadow:0 4px 10px rgba(0,0,0,.15);
+z-index:9999;
+}
+
+.apps-hub-btn:hover{
+background:#f3f4f6;
+transform:translateY(-1px);
+}
 </style>
 </head>
 <body>
@@ -1245,8 +1272,8 @@ if(PHOTO_B64&&PHOTO_B64!=='PHOTO_PLACEHOLDER'){['ph-home','ph-login','ph-admin']
 setDefaults();
 initFirebase();
 </script> 
-</body>
-  
+
 <a href="https://noppm25cnx-rgb.github.io/" class="apps-hub-btn">🏠 Apps Hub</a>
-  
+
+</body>
 </html>
